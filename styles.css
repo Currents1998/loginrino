@@ -1,0 +1,152 @@
+/* Carga la fuente Roboto desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.login-container {
+  background-color: rgba(54, 19, 19, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(32, 25, 25, 0.5), 0 0 60px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  backdrop-filter: blur(15px);
+  
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8); /* Color de fondo del círculo */
+  border-color: rgba(54, 19, 19, 0.9);
+  border-width: 1px;
+  margin: -50px auto 20px auto; /* Ajusta el margen para que el círculo sobresalga */
+  box-shadow: 0 0 20px #f54c4c, 0 0 40px #f54c4c, 0 0 60px #f54c4c; /* Sombra del círculo */
+  overflow: hidden; /* Evita que el logo se salga del círculo */
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.login-title {
+  color: #ec0000; /* Cambia el color a rojo */
+  font-size: 24px; /* Tamaño de fuente */
+  margin-bottom: 10px; /* Espacio entre el título y el logo */
+}
+
+.register-title {
+    color: #ec0000; /* Cambia el color a rojo */
+    font-size: 24px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio entre el título y el logo */
+  }
+
+.tab {
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.active-tab {
+  border-bottom: 2px solid #ffffff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+
+.forgot-password {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.forgot-password-button {
+  display: inline-block;
+  background: linear-gradient(45deg, #f54c4c, #fcd702);
+  color: #000000;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.forgot-password-button:hover {
+  background: linear-gradient(45deg, #fff200, #f54c4c);
+  color: rgba(0, 0, 0, 0.9);
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  max-width: 100%;
+  height: 25px;
+  padding: 3px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+    background: linear-gradient(45deg, #f54c4c, #fcd702);
+  color: rgba(54, 19, 19, 0.9);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #fff200, #f54c4c);
+  color: #000000;
+}
